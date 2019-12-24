@@ -1,0 +1,11 @@
+matplotlib
+numpy
+sklearn
+pandas
+lxml
+requests
+librosa
+keras
+tensorflow
+sounddevice
+scipy
