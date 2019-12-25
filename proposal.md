@@ -47,10 +47,13 @@ In a described example scenario of changing machine's actions based on the detec
 
 As mentioned in the solution statement, the final prediction pipeline encompasses steps from data ingest up to prediction. An ML development process suggested by Uber [^3] carries credibility due to their market success that is at least in part attributable to deployed machine learning models. 
 
-This proposal outlines the first step of understanding business needs and defining minimal viable product. The prototype stage will include data preparation and training/evaluation of the models. Definition of audio pre-processing steps to be used on every audio input are one of the outputs of the prototype stage. Modelling will include following different modelling approaches and their comparison to the no-model benchmark performance in tearms of accuracy. The productionizing of the solution will include model deployment and making prediction. The forth stage of measuring predictions after the actual values can be realized via a feedback loop from the interface where the prediction is displayed.
+This proposal outlines the first step of understanding business needs and defining minimal viable product. The prototype stage will include data preparation and training/evaluation of the models. MFCC (Mel-Frequency Cepstral Coefficients) is a well established feature for audio files that takes advantage of multiple ideas in sound preprocessing (overlapping windows, fast Fourier transforms, etc).[^4] Definition of audio pre-processing steps to be used on every audio input are one of the outputs of the prototype stage. Deep learning approach suits the multi-class classification in the speech domain and will be followed in this project. In particular, a Multilayer Perceptron (MLP) will be compared to the no-model benchmark performance in terms of accuracy. The productionizing of the solution will include model deployment and making prediction. The forth stage of measuring predictions in production can be realized via a feedback loop from the interface where the prediction is displayed. This last step is, however, out of scope of the current project.
 
 [^1]: Maghilnan S and Rajesh Kumar M. Sentiment Analysis on Speaker Specific Speech Data https://arxiv.org/pdf/1802.06209.pdf
 
 [^2]: Dupuis, Kate and Pichora-Fuller, M. Kathleen. Toronto emotional speech set (TESS) https://tspace.library.utoronto.ca/handle/1807/24487
 
 [^3]: Hermann, Jeremy and Del Balso, Mike. Scaling Machine Learning at Uber with Michelangelo https://eng.uber.com/scaling-michelangelo/ 
+
+[^4]: Mendels, Gideon. How to apply machine learning and deep learning methods to audio analysis https://towardsdatascience.com/how-to-apply-machine-learning-and-deep-learning-methods-to-audio-analysis-615e286fcbbc 
+
