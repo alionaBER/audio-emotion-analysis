@@ -33,7 +33,7 @@ The complete solution include among others:
 
 * Feature generation
 
-* Machine learning perdition model
+* Machine learning prediction model
 
 ## Benchmark model 
 
